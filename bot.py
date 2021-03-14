@@ -2,8 +2,8 @@ import slack_sdk # slack SDK for python (originally called slackclient)
 import os # used for environ method to get environment variable
 from pathlib import Path # used for specifing path to .env file
 from dotenv import load_dotenv # loads .env file 
-from flask import Flask
-from slackeventsapi import SlackEventAdapter
+from flask import Flask # Flask app for creating webapp  
+from slackeventsapi import SlackEventAdapter # Event adapter for events API
 
 # defining path and loading Environment variables from .env
 env_path = Path(".") / '.env'
