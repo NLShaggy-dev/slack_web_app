@@ -6,7 +6,7 @@ from flask import Flask # Flask app for creating webapp
 from slackeventsapi import SlackEventAdapter # Event adapter for events API
 
 # defining path and loading Environment variables from .env
-env_path = Path(".") / '.env'
+env_path = Path("..") / '.env'
 load_dotenv(dotenv_path=env_path)
 
 app = Flask(__name__)
